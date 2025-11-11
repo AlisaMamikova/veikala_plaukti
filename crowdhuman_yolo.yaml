@@ -1,0 +1,5 @@
+path: ./dataset
+train: images/train
+val: images/test
+names: [person]  # or [head] if you used --box-type hbox
+nc: 1
