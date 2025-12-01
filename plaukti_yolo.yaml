@@ -1,0 +1,5 @@
+path: ./data
+train: train/img
+val: val/img
+names: [product]  # or [head] if you used --box-type hbox
+nc: 1

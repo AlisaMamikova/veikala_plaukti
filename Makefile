@@ -4,10 +4,10 @@ setup:
 	python -m pip install -r requirements.txt
 
 train:
-	python scripts/train.py --data crowdhuman_yolo.yaml --epochs 50 --imgsz 800 --batch 16
+	python scripts/train.py --data plaukti_yolo.yaml --epochs 50 --imgsz 800 --batch 16
 
 eval:
-	python scripts/eval.py --weights runs/detect/train/weights/best.pt --data crowdhuman_yolo.yaml --imgsz 800 --conf 0.25
+	python scripts/eval.py --weights runs/detect/train/weights/best.pt --data plaukti_yolo.yaml --imgsz 800 --conf 0.25
 
 app:
 	streamlit run app.py --server.port=8501 --server.address=0.0.0.0
